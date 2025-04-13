@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sürpriz Aşkım 💖</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Müzik -->
+  <audio id="background-music" loop>
+    <source src="https://s3.filebin.net/filebin/2dea056b2b0b05af0f09c45b34a53baa15f4f34d1f3fade03dcb773ccab3e384/25ed15e8c5b9fc7cc5325adb93c15bf2a7f3fcd75be18a252766fc32eb811c20?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=7pMj6hGeoKewqmMQILjm%2F20250413%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250413T134138Z&X-Amz-Expires=60&X-Amz-SignedHeaders=host&response-cache-control=max-age%3D60&response-content-disposition=filename%3D%22A%C5%9Fk%20%5BOfficial%20Video%5D%20-%20G%C3%B6khan%20T%C3%BCrkmen%22&response-content-type=audio%2Fmpeg&X-Amz-Signature=2eb5acd5738b5df8571ff6b88aae418d0aaf60d7e11a8b1634303f22e32f5fcc" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Giriş Ekranı -->
+  <div class="login-container" id="login">
+    <h2>Hoş geldin Aşkım 💕</h2>
+    <p>Bu site sadece sana özel... Şifreyi yaz :)</p>
+    <input type="password" id="password" placeholder="Şifreni gir aşkım 💖" />
+    <button onclick="checkPassword()">Giriş Yap</button>
+    <p id="error-message">Şifre yanlış aşkım, bi daha dene 😘</p>
+  </div>
+
+  <!-- Galeri -->
+  <div class="gallery" id="gallery" style="display: none;">
+    <img class="image" src="https://i.hizliresim.com/hre6x49.jpg" alt="Resim 1" />
+    <img class="image" src="https://i.hizliresim.com/nb8w0wh.jpg" alt="Resim 2" />
+    <img class="image" src="https://i.hizliresim.com/9udg3kd.jpg" alt="Resim 3" />
+    <img class="image" src="https://i.hizliresim.com/4hsk7hd.jpg" alt="Resim 4" />
+    <img class="image" src="https://i.hizliresim.com/25xduv3.jpg" alt="Resim 5" />
+    <img class="image" src="https://i.hizliresim.com/bxxfi3n.jpg" alt="Resim 6" />
+    <img class="image" src="https://i.hizliresim.com/blbenlq.jpg" alt="Resim 7" />
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

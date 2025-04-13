@@ -1,0 +1,104 @@
+/* Genel stil */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Giriş ekranı */
+.login-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffb6c1; /* Aşk kırmızımsı */
+  color: #fff;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  transition: opacity 1s ease-in-out;
+}
+
+.login-container h2 {
+  font-size: 2.5em;
+}
+
+.login-container p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+input[type="password"] {
+  padding: 10px;
+  width: 250px;
+  font-size: 1em;
+  margin-bottom: 20px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  outline: none;
+}
+
+input[type="password"]:focus {
+  border-color: #ff69b4; /* Aşk rengi */
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #ff1493; /* Koyu aşk rengi */
+}
+
+#error-message {
+  display: none;
+  color: #ff1493;
+  font-size: 1em;
+  margin-top: 20px;
+}
+
+/* Galeri */
+.gallery {
+  display: none;
+  background: radial-gradient(circle, #ff007f, #ff66cc, #ff1493, #ff69b4); /* Daha modern bir arka plan */
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+  padding: 50px 0;
+  overflow-y: auto;
+  height: 100vh;
+  display: flex;
+  flex-direction: column; /* Alt alta sıralama */
+  align-items: center;
+}
+
+/* Fotoğraflar */
+.image {
+  width: 80%;  /* Fotoğraf genişliği %80 */
+  max-width: 700px; /* Fotoğrafın max genişliği */
+  margin: 20px 0; /* Fotoğraflar arasına boşluk ekleyerek alt alta sıralama */
+  border-radius: 15px; /* Yumuşak kenarlar */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5); /* Hafif gölge efekti */
+  object-fit: cover;
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
