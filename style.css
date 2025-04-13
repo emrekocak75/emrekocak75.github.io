@@ -7,7 +7,6 @@ body {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background: linear-gradient(to bottom, #ff7f7f, #ff69b4); /* Aşk kırmızı ve pembe tonları */
 }
 
 /* Giriş ekranı */
@@ -18,76 +17,60 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: rgba(255, 182, 193, 0.8); /* Aşk kırmızımsı ama biraz şeffaf */
+  background-color: #ffb6c1; /* Aşk kırmızımsı */
   color: #fff;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   transition: opacity 1s ease-in-out;
-  border-radius: 15px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
 }
 
 .login-container h2 {
-  font-size: 3em; /* Yazı boyutunu büyüttüm */
-  letter-spacing: 2px; /* Harf aralığını açtım */
-  background: linear-gradient(45deg, #ff1493, #ff69b4); /* Yazıya renkli bir geçiş ekledim */
-  -webkit-background-clip: text; /* Yazıya renk geçişi eklemek için */
-  color: transparent;
-  font-weight: bold;
+  font-size: 2.5em;
 }
 
 .login-container p {
-  font-size: 1.4em; /* Yazı boyutunu büyüttüm */
+  font-size: 1.2em;
   margin: 10px 0;
-  font-weight: bold;
-  letter-spacing: 1px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-  color: #fff;
 }
 
 input[type="password"] {
   padding: 10px;
   width: 250px;
-  font-size: 1.2em;
+  font-size: 1em;
   margin-bottom: 20px;
   border: 2px solid #fff;
   border-radius: 5px;
   outline: none;
-  background-color: #ff69b4;
 }
 
 input[type="password"]:focus {
-  border-color: #ff1493;
+  border-color: #ff69b4; /* Aşk rengi */
 }
 
 button {
   padding: 10px 20px;
-  font-size: 1.4em; /* Yazı boyutunu büyüttüm */
+  font-size: 1.2em;
   background-color: #ff69b4;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  text-transform: uppercase;
-  font-weight: bold;
-  transition: all 0.3s;
 }
 
 button:hover {
-  background-color: #ff1493;
+  background-color: #ff1493; /* Koyu aşk rengi */
 }
 
 #error-message {
   display: none;
   color: #ff1493;
-  font-size: 1.2em;
+  font-size: 1em;
   margin-top: 20px;
-  font-weight: bold;
 }
 
 /* Galeri */
 .gallery {
   display: none;
-  background: radial-gradient(circle, #ff007f, #ff66cc, #ff1493, #ff69b4); /* Romantik arka plan */
+  background: radial-gradient(circle, #ff007f, #ff66cc, #ff1493, #ff69b4); /* Daha modern bir arka plan */
   background-size: 400% 400%;
   animation: gradientAnimation 10s ease infinite;
   padding: 50px 0;
@@ -96,8 +79,6 @@ button:hover {
   display: flex;
   flex-direction: column; /* Alt alta sıralama */
   align-items: center;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
 }
 
 /* Fotoğraflar */
@@ -111,7 +92,7 @@ button:hover {
   animation: fadeIn 1s ease-in-out;
 }
 
-/* Resim altındaki yazılar */
+/* Fotoğraf altındaki yazılar */
 .gallery p {
   font-size: 1.5em;
   color: #fff;
@@ -124,9 +105,16 @@ button:hover {
   -webkit-background-clip: text; /* Yazıya renkli geçiş ekledim */
   color: transparent;
   font-weight: bold;
+  padding: 20px;
+  border-radius: 15px;
+  border: 4px solid #ff1493; /* Çerçeve ekledim */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Hafif gölge efekti */
+  max-width: 80%; /* Yazı genişliğini sınırladım */
+  margin: 20px auto; /* Yazıyı ortaladım */
+  background-color: rgba(255, 255, 255, 0.4); /* Hafif bir beyaz şeffaf arka plan */
+  backdrop-filter: blur(10px); /* Arka planı bulanıklaştırarak yazıyı ön plana çıkardım */
 }
 
-/* Animasyonlar */
 @keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }
