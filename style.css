@@ -27,19 +27,27 @@ body {
 }
 
 .login-container h2 {
-  font-size: 2.5em;
-  letter-spacing: 1px;
+  font-size: 3em; /* Yazı boyutunu büyüttüm */
+  letter-spacing: 2px; /* Harf aralığını açtım */
+  background: linear-gradient(45deg, #ff1493, #ff69b4); /* Yazıya renkli bir geçiş ekledim */
+  -webkit-background-clip: text; /* Yazıya renk geçişi eklemek için */
+  color: transparent;
+  font-weight: bold;
 }
 
 .login-container p {
-  font-size: 1.2em;
+  font-size: 1.4em; /* Yazı boyutunu büyüttüm */
   margin: 10px 0;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  color: #fff;
 }
 
 input[type="password"] {
   padding: 10px;
   width: 250px;
-  font-size: 1em;
+  font-size: 1.2em;
   margin-bottom: 20px;
   border: 2px solid #fff;
   border-radius: 5px;
@@ -53,13 +61,14 @@ input[type="password"]:focus {
 
 button {
   padding: 10px 20px;
-  font-size: 1.2em;
+  font-size: 1.4em; /* Yazı boyutunu büyüttüm */
   background-color: #ff69b4;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   text-transform: uppercase;
+  font-weight: bold;
   transition: all 0.3s;
 }
 
@@ -70,8 +79,9 @@ button:hover {
 #error-message {
   display: none;
   color: #ff1493;
-  font-size: 1em;
+  font-size: 1.2em;
   margin-top: 20px;
+  font-weight: bold;
 }
 
 /* Galeri */
@@ -103,13 +113,17 @@ button:hover {
 
 /* Resim altındaki yazılar */
 .gallery p {
-  font-size: 1.3em;
+  font-size: 1.5em;
   color: #fff;
   font-weight: bold;
   letter-spacing: 1px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
   margin-top: 10px;
   text-align: center;
+  background: linear-gradient(45deg, #ff1493, #ff69b4); /* Aşk dolu bir geçiş ekledim */
+  -webkit-background-clip: text; /* Yazıya renkli geçiş ekledim */
+  color: transparent;
+  font-weight: bold;
 }
 
 /* Animasyonlar */
